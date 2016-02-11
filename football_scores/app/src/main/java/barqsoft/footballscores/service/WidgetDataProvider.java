@@ -40,8 +40,8 @@ public class WidgetDataProvider implements RemoteViewsService.RemoteViewsFactory
         long currentTime = System.currentTimeMillis();
         Date today = new Date(currentTime);
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-//        String todayString = dateFormat.format(today);
-        String todayString = "2016-02-13";
+       String todayString = dateFormat.format(today);
+        // String todayString = "2016-02-13";
         Log.d(TAG, "onCreate: Date string = " + todayString);
 
         Cursor cursor = mContentResolver.query(
